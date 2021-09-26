@@ -22,7 +22,7 @@
 }
 
 /* Variables */
-/*------------- Titulos (index + secciones) ---------*/
+/*---------------------------------- Titulos (index + secciones) --------------------*/
 h2 {
   clear: left;
   font: 12px "Carrois Gothic SC", sans-serif, underline;
@@ -30,7 +30,7 @@ h2 {
   text-align: left;
 }
 
-/* -------------------------Menu---------------------- */
+/* ----------------------------------------------Menu------------------------------- */
 .menu {
   background-color: #ffe66d;
 }
@@ -41,7 +41,7 @@ h2 {
   letter-spacing: 3px;
 }
 
-/*------------------------- Footer--------------------------- */
+/*----------------------------------------- Footer------------------------------------- */
 .footer {
   width: 100%;
   height: 80px;
@@ -77,7 +77,7 @@ h2 {
   margin-left: 0;
 }
 
-/* ----------------Sección Home ------------- */
+/* -------------------------------------Sección Home --------------------------- */
 #carouselExampleCaptions {
   padding-top: 10px;
 }
@@ -90,7 +90,7 @@ h2 {
   font: 18px "raleway", sans-serif;
 }
 
-/* -------------Sección sobre nosotros-------- */
+/* -------------------------------Sección sobre nosotros------------------------ */
 main {
   min-height: 100vh;
   display: -webkit-box;
@@ -106,7 +106,7 @@ main {
 }
 
 .about {
-  background: url("../Secciones/multimedia/sobrenos.jpg");
+  background: url("/pages/secciones/multimedia/sobrenos.jpg");
   background-size: 100%;
   overflow: hidden;
   padding: 50px 0;
@@ -259,7 +259,7 @@ main {
   display: flex;
   width: 100%;
   height: 100vh;
-  background-image: url(/pages/Secciones/multimedia/cookies.jpg);
+  background-image: url(/pages/secciones/multimedia/cookies.jpg);
   background-size: cover;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -337,7 +337,7 @@ input:focus, textarea:focus {
           box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
 }
 
-/* --------------------Error 404--------------------- */
+/* ---------------------------------Page Error 404--------------------------------- */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
