@@ -1,0 +1,18 @@
+
+/* Media Q - Imagen Header (responsive) */
+
+@media screen and (max-width: 400px) {
+    .imagenHeader {
+      width: fit-content;
+      height: fit-content;
+    }
+}
+
+
+/* Media Q - Sección Productos (responsive) */
+
+@media screen and (max-width: 600px) {
+    .productos {
+      width: 100%;
+    }
+}
