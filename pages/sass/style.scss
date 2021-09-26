@@ -60,12 +60,13 @@ h2 {
     padding-top: 10px;
 }
 .carousel__titulo {
-    font-size: 25px;
-    }
-    
+  font: $carousel-titulo;
+  }
+  
 .carousel__texto {
-    font-size: 20px;
-    }
+  font: $carousel-descripcion;
+  }
+
 
 /* -------------Sección sobre nosotros-------- */
 
@@ -126,42 +127,42 @@ main {
 /*--------------------------- Seccion Productos---------------------------------- */
 
 .productos {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    padding-left: 40px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-left: 40px;
+  }
 .producto {
-    flex: 0 0 200px;
-    margin: 10px;    
-    background-color: white ;
-    box-shadow: $box-shadow ;
-    border-radius: 20px;
-    } 
+  flex: 0 0 0;
+  margin: 10px;    
+  background-color: white ;
+  box-shadow: $box-shadow ;
+  border-radius: 20px;
+  } 
 .producto img {
-    max-width: auto;
-    border-radius: 20px;
-    }
+  max-width: auto;
+  border-radius: 20px;
+  }
 .producto__text {
-    padding: 0 20px 20px;
-    }
-.producto__button {
-    background: $light-blue;
-    border: 0;
-    padding: 10px;
-    margin-top: 10px;
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: $box-shadow;
-    }
-.producto__button:hover {
-    transform: scale(1);
-    box-shadow: $form-shadow;
+  padding: 0 20px 20px;
+  }
+.producto a {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.producto a:hover {
+  transform: scale(1);
+  box-shadow: $form-shadow;
 }
 .producto__subtitulo {
-    font: $font-producto-subtitulo;
-    margin-top: 7px;
+  font: $font-producto-subtitulo;
+  margin-top: 30px;
 }
+.producto p {
+  margin-top: 18px;
+  font-size: 12px;
+}
+
 
 /* ---------------------------Seccion Servicios---------------------------------- */
 #servicios {
@@ -207,7 +208,7 @@ main {
     display:flex;
     width: 100%;
     height: 100vh;
-    background-image: url(/sitio/pages/Secciones/multimedia/cookies.jpg);
+    background-image: url(/pages/Secciones/multimedia/cookies.jpg);
     background-size: cover;
     justify-content: left;
     align-items: center;

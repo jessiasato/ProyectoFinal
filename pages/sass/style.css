@@ -83,11 +83,11 @@ h2 {
 }
 
 .carousel__titulo {
-  font-size: 25px;
+  font: 40px "raleway", sans-serif;
 }
 
 .carousel__texto {
-  font-size: 20px;
+  font: 18px "raleway", sans-serif;
 }
 
 /* -------------Sección sobre nosotros-------- */
@@ -171,8 +171,8 @@ main {
 
 .producto {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 200px;
-          flex: 0 0 200px;
+      -ms-flex: 0 0 0px;
+          flex: 0 0 0;
   margin: 10px;
   background-color: white;
   -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
@@ -189,18 +189,12 @@ main {
   padding: 0 20px 20px;
 }
 
-.producto__button {
-  background: #cddafd;
-  border: 0;
-  padding: 10px;
-  margin-top: 10px;
-  width: 100%;
-  border-radius: 4px;
-  -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+.producto a {
+  margin-top: 30px;
+  margin-left: 10px;
 }
 
-.producto__button:hover {
+.producto a:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
@@ -209,7 +203,12 @@ main {
 
 .producto__subtitulo {
   font: 9px "raleway", sans-serif bold;
-  margin-top: 7px;
+  margin-top: 30px;
+}
+
+.producto p {
+  margin-top: 18px;
+  font-size: 12px;
 }
 
 /* ---------------------------Seccion Servicios---------------------------------- */
@@ -260,7 +259,7 @@ main {
   display: flex;
   width: 100%;
   height: 100vh;
-  background-image: url(/sitio/pages/Secciones/multimedia/cookies.jpg);
+  background-image: url(/pages/Secciones/multimedia/cookies.jpg);
   background-size: cover;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
