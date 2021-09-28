@@ -165,7 +165,7 @@ main {
           align-items: stretch;
   padding-left: 40px;
   padding-top: 30px;
-  background-image: url("sitio/multimedia/marble.jpg");
+  background-image: url(marble.jpg);
 }
 
 .producto {
