@@ -2,87 +2,57 @@
 /* Imports */
 /* Colores */
 /* Tipografias */
+/* Genéricas */
+/* Home */
+/* Seccion contacto */
+/* Seccion Productos */
+/* Seccion Sobre nosotros */
+/* Seccion Servicios */
+/* Page not found */
+/* Variables */
 /* Media Q - Imagen Header (responsive) */
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .imagenHeader {
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: auto;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .imagenHeader {
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: auto;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .imagenHeader {
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: auto;
   }
 }
 
 /* Media Q - Sección Productos (responsive) */
-@media screen and (max-width: 767px) {
-  .productos {
-    width: 100%;
+@media only screen and (max-width: 767px) {
+  .contacto__enviar {
+    width: 30px;
+    padding: 0;
+    margin: 0;
   }
 }
 
-/* Media Q - Sección Servicios (responsive) */
-@media screen and (max-width: 767px) {
-  #servicios {
-    width: auto;
+/* Media Q - Page not found */
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 {
+    height: 122px;
+    line-height: 122px;
   }
-}
-
-/* Media Q - Sección Sobre Nosotros (responsive) */
-@media screen and (max-width: 767px) {
-  .about__description {
-    width: 60%;
+  .notfound .notfound-404 h1 {
+    font-size: 122px;
   }
-  .about__description h1 {
-    margin-bottom: 0px;
-    font-size: 10px;
+  .notfound h2 {
+    font-size: 26px;
   }
-  .about__description h5 {
-    font-size: 10px;
-  }
-  .about__description p {
-    font-size: 9px;
-    line-height: 10px;
-    text-align: justify;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-  .about__description a {
-    margin-left: 0%;
-    font-size: 9px;
-  }
-}
-
-/* Media Q - Sección Contacto (responsive) */
-@media screen and (max-width: 767px) {
-  .about {
-    width: auto;
-  }
-}
-
-/* Variables */
-/*---------------------------------- Titulos (index + secciones) --------------------*/
-h2 {
-  clear: left;
-  font: 12px "Carrois Gothic SC", sans-serif;
-  color: #0c0c0c;
-  text-align: left;
 }
 
 /* ----------------------------------------------Menu------------------------------- */
@@ -91,7 +61,7 @@ h2 {
 }
 
 .nav.nav-tabs.nav-justified li a {
-  font: 10px "raleway", sans-serif;
+  font: 1em "raleway", sans-serif;
   color: #0c0c0c;
   letter-spacing: 3px;
 }
@@ -101,7 +71,7 @@ h2 {
   width: 100%;
   height: 80px;
   color: #0c0c0c;
-  font: 12px "raleway", sans-serif;
+  font: 1.1em "raleway", sans-serif;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fad2ff), to(#eae4e9));
   background-image: linear-gradient(to bottom, #fad2ff, #eae4e9);
   position: relative;
@@ -138,11 +108,11 @@ h2 {
 }
 
 .carousel__titulo {
-  font: 30px "Carrois Gothic SC", sans-serif;
+  font: 3.7em "Carrois Gothic SC", sans-serif;
 }
 
 .carousel__texto {
-  font: 18px "raleway", sans-serif;
+  font: 2em "raleway", sans-serif;
 }
 
 /* -------------------------------Sección sobre nosotros------------------------ */
@@ -180,7 +150,7 @@ main {
 
 .about__description h1 {
   margin-bottom: 30px;
-  font: 30px "Carrois Gothic SC", sans-serif;
+  font: 3em "Carrois Gothic SC", sans-serif;
 }
 
 .about__description h5 {
@@ -188,7 +158,7 @@ main {
 }
 
 .about__description p {
-  font: 13px "raleway", sans-serif;
+  font: 1.2em "raleway", sans-serif;
   color: black;
   line-height: 32px;
   text-align: justify;
@@ -257,7 +227,7 @@ main {
 }
 
 .producto__subtitulo {
-  font: 18px "Carrois Gothic SC", sans-serif;
+  font: 1.7em "Carrois Gothic SC", sans-serif;
   margin-top: 30px;
 }
 
@@ -282,11 +252,14 @@ main {
   padding-top: 10px;
   text-align: center;
   padding-bottom: 10px;
-  font: 18px "Carrois Gothic SC", sans-serif;
+  font: 2em "Carrois Gothic SC", sans-serif;
 }
 
 #servicios p {
   text-align: justify;
+  font: 1.12em "raleway", sans-serif;
+  line-height: 14px;
+  letter-spacing: 0.5px;
 }
 
 #servicios a {
@@ -356,18 +329,18 @@ input, textarea {
 }
 
 .contacto__titulo {
-  font: 25px "Carrois Gothic SC", sans-serif;
+  font: 2.5em "Carrois Gothic SC", sans-serif;
 }
 
 form input {
-  font: 12px "raleway", sans-serif;
+  font: 1.3em "raleway", sans-serif;
 }
 
 input:focus, textarea:focus {
   border-bottom-color: #cddafd;
 }
 
-.contacto__enviar {
+#contacto__enviar {
   border: none;
   outline: none;
   background-color: #cddafd;
@@ -377,10 +350,10 @@ input:focus, textarea:focus {
   -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
           box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
   margin: 40px 0px;
-  font: 12px "raleway", sans-serif;
+  font: 1.3em "raleway", sans-serif;
 }
 
-.contacto__enviar:hover {
+#contacto__enviar:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
@@ -561,18 +534,5 @@ body {
   background-color: #ffe66d;
   -webkit-box-shadow: 0px 0px 0px 0px #000, 0px 0px 0px 2px #fff1e6;
   box-shadow: 0px 0px 0px 0px #000, 0px 0px 0px 2px #fff1e6;
-}
-
-@media only screen and (max-width: 480px) {
-  .notfound .notfound-404 {
-    height: 122px;
-    line-height: 122px;
-  }
-  .notfound .notfound-404 h1 {
-    font-size: 122px;
-  }
-  .notfound h2 {
-    font-size: 26px;
-  }
 }
 /*# sourceMappingURL=style.css.map */
