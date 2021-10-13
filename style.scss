@@ -67,7 +67,22 @@ main {
     align-items: center;
     justify-content: center;
 }
-
+@media only screen and (max-width: 480px) {
+  .about{
+    background-size: cover;
+    overflow: hidden;
+  }
+  .about__description {
+    width: 600px;
+    height: auto;
+    float: none;
+    padding-left: 0;
+    margin-right: 0;
+  }
+  .about__description h5 {
+    font-size: 0.5em;
+  }
+}
 .about {
     background-image: url(sobrenos.jpg);
     background-size: 100%;
@@ -92,7 +107,7 @@ main {
 }
 
 .about__description h5 {
-    font-size: 20px;
+    font-size: 2em;
 }
 
 .about__description p {
@@ -251,9 +266,8 @@ input:focus, textarea:focus {
 #contacto__enviar {
     border: none;
     outline: none;
-    background-color: $light-blue;
     padding: 15px;
-    width: 200px;
+    width: 150px;
     border-radius: 4px;
     box-shadow: $form-shadow;
     margin: 40px 0px;
