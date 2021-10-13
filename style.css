@@ -49,6 +49,24 @@
   .about__description {
     width: 60%;
   }
+  .about__description h1 {
+    margin-bottom: 0px;
+    font-size: 10px;
+  }
+  .about__description h5 {
+    font-size: 10px;
+  }
+  .about__description p {
+    font-size: 9px;
+    line-height: 10px;
+    text-align: justify;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .about__description a {
+    margin-left: 0%;
+    font-size: 9px;
+  }
 }
 
 /* Media Q - Sección Contacto (responsive) */
