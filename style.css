@@ -40,21 +40,21 @@
 /* Media Q - Sección Servicios (responsive) */
 @media screen and (max-width: 767px) {
   #servicios {
-    width: 100%;
+    width: auto;
   }
 }
 
 /* Media Q - Sección Sobre Nosotros (responsive) */
 @media screen and (max-width: 767px) {
   .about {
-    width: 100%;
+    width: auto;
   }
 }
 
 /* Media Q - Sección Contacto (responsive) */
 @media screen and (max-width: 767px) {
   .about {
-    width: 100%;
+    width: auto;
   }
 }
 
