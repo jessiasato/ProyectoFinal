@@ -39,8 +39,8 @@
 
 /* Media Q - Sección Sobre Nosotros (responsive) */
 @media screen and (max-width: 767px) {
- .about {
-    width: auto;
+ .about__description {
+    width: 60%;
   }
 }
 
