@@ -24,9 +24,10 @@
 <body>
 
 <!-------------------------Imagen Header---------------------->
-    <header> 
-        <img src="multimedia/headerok.jpg"; width="100%"; height="300px" alt="foto encabezado">
-    </header>
+  <header class="imagenHeader"> 
+    <img src="multimedia/headerok.jpg" alt="foto encabezado">
+  </header>
+
 
 <!-------------------------Menú----------------------->
     <nav class="menu">
@@ -49,21 +50,22 @@
       </ul>
     </nav>
 
-<!-------------------------Descripción----------------------->       
-<main class="mainAbout">
+<!-------------------------Descripción----------------------->      
+
 <div class="about">
-  <div class="about__description">
-    <h1> Sobre Nosotros </h1>
-    <h5>· DULCE CHOCOLAT ·</h5>
-    <p> Somos un emprendimiento de repostería artesanal que nació a inicios de 2019. Localizados en el barrio de 
+  <div class="aboutBox">
+      <h1 class="h1" id="aboutTitulo"> Sobre nosotros </h1>
+      <h2 class="h2" id="aboutSubtitulo"> · DULCE CHOCOLAT · </h2>
+      <h3 class="h3" id="aboutParrafo">Somos un emprendimiento de repostería artesanal que nació a inicios de 2019. Localizados en el barrio de 
         Flores, comenzamos comercializando chocolates para fechas especiales a través de nuestras redes sociales y
         nos expandimos rápidamente a diferentes productos como tortas, postres, cupcakes, entre otras cosas.
         Estamos en constante búsqueda de nuevas recetas y productos para seguir creciendo. <br>
-        Te invitamos en este sitio a conocer nuestros productos, y a dejarnos un mensaje si tenes alguna consulta.  </p>
-    <a class="btn btn-dark btn-social" href="contacto.html"> Envianos un mensaje </a>
+        Te invitamos en este sitio a conocer nuestros productos, y a dejarnos un mensaje si tenes alguna consulta.
+      </h3>
+      <a class="btn btn-dark btn-social" id="contacto__enviar">Enviar mensaje</a>
   </div>
 </div>
-</main>
+
 <!-------------------------Footer----------------------->
 <footer class="footer"> 
     <ul class="footer__ul"> 

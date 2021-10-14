@@ -12,22 +12,22 @@
 /* Variables */
 /* Media Q - Imagen Header (responsive) */
 @media only screen and (min-width: 1024px) {
-  .imagenHeader {
-    width: 1024px;
+  .imagenHeader img {
+    width: 100%;
     height: auto;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .imagenHeader {
-    width: 800px;
+  .imagenHeader img {
+    width: 100%;
     height: auto;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  .imagenHeader {
-    width: 320px;
+  .imagenHeader img {
+    width: 100%;
     height: auto;
   }
 }
@@ -44,6 +44,12 @@
   .notfound h2 {
     font-size: 26px;
   }
+}
+
+/* header */
+.imagenHeader img {
+  width: 100%;
+  height: 300px;
 }
 
 /* ----------------------------------------------Menu------------------------------- */
@@ -107,83 +113,62 @@
 }
 
 /* -------------------------------Sección sobre nosotros------------------------ */
-main {
-  min-height: 100vh;
+.about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
+  height: 90vh;
+  background-image: url(sobrenos.jpg);
+  background-size: cover;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media only screen and (max-width: 480px) {
-  .about {
-    background-size: cover;
-    overflow: hidden;
-  }
-  .about__description {
-    width: 600px;
-    height: auto;
-    float: none;
-    padding-left: 0;
-    margin-right: 0;
-  }
-  .about__description h5 {
-    font-size: 0.5em;
-  }
-}
-
-.about {
-  background-image: url(sobrenos.jpg);
-  background-size: 100%;
-  overflow: hidden;
-  padding: 50px 0;
-}
-
-.about__description {
-  width: 60%;
-  height: 600px;
-  float: left;
+.aboutBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   background-color: #fad2ff;
-  margin-left: 10px;
-  padding: 130px;
+  width: 120vh;
+  height: 70vh;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
           box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
-  border-radius: 15px;
+  border-radius: 8px;
+  margin-left: 15px;
 }
 
-.about__description h1 {
-  margin-bottom: 30px;
+#aboutTitulo {
   font: 3em "Carrois Gothic SC", sans-serif;
+  margin-top: 5vh;
 }
 
-.about__description h5 {
-  font-size: 2em;
+#aboutSubtitulo {
+  margin-top: 3vh;
 }
 
-.about__description p {
+#aboutParrafo {
   font: 1.2em "raleway", sans-serif;
   color: black;
-  line-height: 32px;
+  line-height: 5vh;
   text-align: justify;
-  margin-bottom: 40px;
-  margin-top: 10px;
-}
-
-.about__description a {
-  margin-left: 35%;
-  font-size: 13px;
-}
-
-.about__description a:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
-          box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
+  margin-bottom: 2vh;
+  margin-top: 5vh;
 }
 
 /*--------------------------- Seccion Productos---------------------------------- */

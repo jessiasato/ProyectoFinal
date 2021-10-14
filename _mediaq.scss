@@ -2,22 +2,22 @@
 /* Media Q - Imagen Header (responsive) */
 
 @media only screen and (min-width: 1024px) {
-    .imagenHeader {
-      width: 1024px;
+    .imagenHeader img {
+      width: 100%;
       height: auto;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width:1023px) {
-  .imagenHeader {
-    width: 800px;
+  .imagenHeader img {
+    width: 100%;
     height: auto;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  .imagenHeader {
-    width: 320px;
+  .imagenHeader img {
+    width: 100%;
     height: auto;
   }
 }
