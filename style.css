@@ -139,7 +139,7 @@
           flex-flow: column;
   background-color: #fad2ff;
   width: 120vh;
-  height: 70vh;
+  height: 80vh;
   padding: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -155,7 +155,7 @@
 
 #aboutTitulo {
   font: 3em "Carrois Gothic SC", sans-serif;
-  margin-top: 5vh;
+  margin-top: 6vh;
 }
 
 #aboutSubtitulo {

@@ -84,7 +84,7 @@
   flex-flow: column;
   background-color:$mimi-pink;
   width: 120vh;
-  height: 70vh;
+  height: 80vh;
   padding:20px;
   justify-content: center;
   align-items: center;
@@ -95,7 +95,7 @@
 
 #aboutTitulo {
   font: $font-about-titulo;
-  margin-top: 5vh;
+  margin-top: 6vh;
 }
 
 #aboutSubtitulo {
@@ -110,7 +110,6 @@
   margin-bottom: 2vh;
   margin-top: 5vh;
 }
-
 
 
 /*--------------------------- Seccion Productos---------------------------------- */
@@ -263,9 +262,6 @@ input:focus, textarea:focus {
     transform: scale(1.05);
     box-shadow: $form-shadow;
 }
-
-
-
 
 /* ---------------------------------Page Error 404--------------------------------- */
 * {
