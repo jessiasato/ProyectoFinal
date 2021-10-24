@@ -35,3 +35,28 @@
     font-size: 26px;
   }
 }
+
+/* Media Q - Footer */
+@media screen and (max-width: 800px) {
+  .footer_1 {
+  width: 60%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap:5px;
+  padding: 5px 0px;
+  }
+  .box figure img {
+      width: 100px;
+  }
+  .footer_1 p {
+    font-size: 1em;
+  }
+  .redes a {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: black;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+}

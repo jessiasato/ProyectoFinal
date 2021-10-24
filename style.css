@@ -46,6 +46,32 @@
   }
 }
 
+/* Media Q - Footer */
+@media screen and (max-width: 800px) {
+  .footer_1 {
+    width: 60%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    padding: 5px 0px;
+  }
+  .box figure img {
+    width: 100px;
+  }
+  .footer_1 p {
+    font-size: 1em;
+  }
+  .redes a {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: black;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+}
+
 /* header */
 .imagenHeader img {
   width: 100%;
@@ -66,37 +92,70 @@
 /*----------------------------------------- Footer------------------------------------- */
 .footer {
   width: 100%;
-  height: 80px;
-  color: #0c0c0c;
-  font: 1.1em "raleway", sans-serif;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fad2ff), to(#eae4e9));
-  background-image: linear-gradient(to bottom, #fad2ff, #eae4e9);
-  position: relative;
+  background-color: #ffe66d;
 }
 
-.footer__ul {
+.footer_1 {
+  width: 100%;
+  max-width: 1200px;
+  height: 120px;
+  margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 2fr 2fr;
-      grid-template-columns: 1fr 2fr 2fr 2fr;
-  margin: 0 auto;
-  list-style: none;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 80px;
+  padding: 10px 0px;
 }
 
-.footer__li {
+.footer_1 h2 {
+  font: 1.5em "raleway", sans-serif;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.footer_1 p {
+  font: "tahoma", sans-serif;
+  font-size: 1.2em;
+}
+
+.footer .footer_1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.bi-whatsapp, .bi-facebook, .bi-instagram, .bi-truck {
-  padding-top: 10px;
-  color: black;
-  margin-left: 50px;
+.box figure img {
+  width: 100px;
 }
 
-.bi-instagram {
-  margin-left: 0;
+.redes a {
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: black;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 3.2em;
+}
+
+.footer_2 {
+  background-color: #fff1e6;
+  padding: 15px 10px;
+  text-align: center;
+  color: black;
+  font: 1.5em "raleway", sans-serif;
+  font-size: 1.3em;
 }
 
 /* -------------------------------------Sección Home --------------------------- */
@@ -165,9 +224,8 @@
 #aboutParrafo {
   font: 1.2em "raleway", sans-serif;
   color: black;
-  line-height: 5vh;
+  line-height: 4vh;
   text-align: justify;
-  margin-bottom: 2vh;
   margin-top: 5vh;
 }
 

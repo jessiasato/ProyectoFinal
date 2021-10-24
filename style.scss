@@ -24,33 +24,64 @@
 }
 
 /*----------------------------------------- Footer------------------------------------- */
-.footer {
-    width: 100%;
-    height: 80px;
-    color: $black; 
-    font: $font-footer;
-    background-image: linear-gradient(to bottom, $mimi-pink, $magnolia);
-    position: relative;
+.footer{
+  width: 100%;
+  background-color: $yellow;
 }
 
-.footer__ul {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
-    margin: 0 auto;
-    list-style: none;
+.footer_1  {
+  width: 100%;
+  max-width: 1200px;
+  height: 120px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:80px;
+  padding: 10px 0px;
 }
 
-.footer__li {
-    align-items: center;
+.footer_1 h2{
+  font: $font-footer;
+  letter-spacing: 2px;
+  color: black;
+}
+.footer_1 p {
+  font: $font-generico;
+  font-size: 1.2em;
 }
 
-.bi-whatsapp, .bi-facebook, .bi-instagram, .bi-truck {
-    padding-top: 10px;
-    color: black;
-    margin-left: 50px;
+.footer .footer_1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.bi-instagram {
-    margin-left: 0;
+
+.box figure img{
+  width: 100px;
+}
+
+.redes a {
+  display:inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: black;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 3.2em;
+}
+
+
+.footer_2 {
+  background-color: $linen;
+  padding: 15px 10px;
+  text-align: center;
+  color: black;
+  font: $font-footer;
+  font-size: 1.3em;
 }
 
 /* -------------------------------------Sección Home --------------------------- */
@@ -105,12 +136,10 @@
 #aboutParrafo {
   font: $font-sobrenos-parrafo;
   color:black;
-  line-height: 5vh;
+  line-height: 4vh;
   text-align: justify;
-  margin-bottom: 2vh;
   margin-top: 5vh;
 }
-
 
 /*--------------------------- Seccion Productos---------------------------------- */
 
