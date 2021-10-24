@@ -39,7 +39,7 @@
 /* Media Q - Footer */
 @media screen and (max-width: 800px) {
   .footer_1 {
-  width: 60%;
+  width: 100%;
   grid-template-columns: repeat(1, 1fr);
   grid-gap:5px;
   padding: 5px 0px;
@@ -51,12 +51,12 @@
     font-size: 1em;
   }
   .redes a {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
     color: black;
     margin-right: 5px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
