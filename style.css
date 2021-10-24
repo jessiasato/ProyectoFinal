@@ -61,6 +61,9 @@
   .footer_1 p {
     font-size: 1em;
   }
+  .footer_1 h2 {
+    font-size: 9px;
+  }
   .redes a {
     width: 10px;
     height: 10px;
@@ -98,7 +101,6 @@
 .footer_1 {
   width: 100%;
   max-width: 1200px;
-  height: auto;
   margin: auto;
   display: -ms-grid;
   display: grid;
