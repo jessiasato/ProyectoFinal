@@ -30,3 +30,20 @@ const division = function (a,b) {
     return (a / b);
 }
 console.log (division(totalPago,6));
+
+//Incorporando objetos
+function Producto (nombre, precio, peso,) {
+    this.nombre = nombre;
+    this.precio = precio;
+    this.peso = peso;
+    this.agregarProducto = function () {
+        console.log ("Producto " + this.nombre + " agregado correctamente")
+    }
+}
+const producto1 = new Producto ("Cookies",100,"25gr");
+const producto2 = new Producto ("Cupcake",220,"50gr");
+const producto3 = new Producto ("bombones",315,"250gr");
+
+producto1.agregarProducto ();
+producto2.agregarProducto ();
+producto3.agregarProducto ();
