@@ -87,7 +87,7 @@
 }
 
 .nav.nav-tabs.nav-justified li a {
-  font: 1em "raleway", sans-serif;
+  font: 1.1em "raleway", sans-serif;
   color: #0c0c0c;
   letter-spacing: 3px;
 }
@@ -111,14 +111,14 @@
 }
 
 .footer_1 h2 {
-  font: 1.5em "raleway", sans-serif;
+  font: 1.7em "raleway", sans-serif;
   letter-spacing: 2px;
   color: black;
 }
 
 .footer_1 p {
   font: "tahoma", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .footer .footer_1 .box figure {
@@ -156,7 +156,7 @@
   padding: 15px 10px;
   text-align: center;
   color: black;
-  font: 1.5em "raleway", sans-serif;
+  font: 1.7em "raleway", sans-serif;
   font-size: 1.3em;
 }
 

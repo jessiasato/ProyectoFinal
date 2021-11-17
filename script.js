@@ -1,10 +1,7 @@
 //Mensaje de bienvenida
-let nombreIngresado = prompt ("Ingresar su nombre");
-alert ("Bienvenid@ " + nombreIngresado);
+// let nombreIngresado = prompt ("Ingresar su nombre");
+// alert ("Bienvenid@ " + nombreIngresado);
 
-
-
-// ----------------Desafío Nª4 : Incorporando funciones ----------------------------------
 
 // //Agregar un producto al carrito
 // let productoAgregado = "añadir producto al carrito"
@@ -80,12 +77,19 @@ productos.push (new Producto ("Bombones",315,"250gr",100,"chocolates y bombones"
 productos.push (new Producto ("Cupcake",220,"50gr",42,"cookies y cupcakes"));
 productos.push (new Producto ("Chocotorta",350,"500gr",2,"tortas y postres"));
 
-//Mostrar stock del producto Chocotorta
-const buscarStock = productos.find(productos => productos.nombre === "Chocotorta"); {
-console.log ("Quedan disponibles " + this.stock + " de Chocotorta")
-}
+// //Mostrar stock del producto Chocotorta
+// const buscarStock = productos.find(productos => productos.nombre === "Chocotorta"); {
+// console.log ("Quedan disponibles " + this.stock + " de Chocotorta")
+// }
 
-//Filtrar solo productos de la categoría cookies y cupcakes
-const filtrarCategoria = productos.filter(productos => productos.categoria === "cookies y cupcakes"); {
-console.log(filtrarCategoria);
-}
+// //Filtrar solo productos de la categoría cookies y cupcakes
+// const filtrarCategoria = productos.filter(productos => productos.categoria === "cookies y cupcakes"); {
+// console.log(filtrarCategoria);
+// };
+
+
+// ----------------Desafío Nª6 (Complementario ): Ordenando arrays ----------------------------------
+
+let ordenPrecio = productos.sort (function (a,b){
+    return (b.precio - a.precio)
+});
