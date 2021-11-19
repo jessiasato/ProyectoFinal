@@ -1,6 +1,8 @@
 //Mensaje de bienvenida
 let nombreIngresado = prompt ("Ingresar su nombre");
 alert ("Bienvenid@ " + nombreIngresado);
+let apellidoIngresado = prompt ("Ingrese su apellido");
+alert ("Bienvenid@" + nombreIngresado + apellidoIngresado);
 
 // Array de Productos 
 class Producto {
