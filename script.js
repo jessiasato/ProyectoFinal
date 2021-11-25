@@ -1,37 +1,38 @@
 //Mensaje de bienvenida
-let nombreIngresado = prompt ("Ingresar su nombre");
-alert ("Bienvenid@ " + nombreIngresado);
-let apellidoIngresado = prompt ("Ingrese su apellido");
-alert ("Bienvenid@" + nombreIngresado + apellidoIngresado);
+// let nombreIngresado = prompt ("Ingresar su nombre");
+// alert ("Bienvenid@ " + nombreIngresado);
+// let apellidoIngresado = prompt ("Ingrese su apellido");
+// alert ("Bienvenid@" + nombreIngresado + apellidoIngresado);
 
 // Array de Productos 
 class Producto {
-    constructor (nombre, precio, peso, stock, categoria,codigo, agregarProducto,) {
+    constructor (nombre, precio, peso, stock, categoria,imagen,agregarProducto,) {
     this.nombre = nombre;
     this.precio = precio;
     this.peso = peso;
     this.stock = stock;
     this.categoria = categoria;
-    this.codigo = codigo;
+    this.imagen = imagen;
     this.agregar = function () {console.log ("producto "+ this.nombre + " agregado correctamente")}
 }
 }
 
 const productos = [];
-productos.push (new Producto ("Cookie",90,"25gr",10,"cookies y cupcakes","P001"));
-productos.push (new Producto ("Cupcake",120,"250gr",100,"chocolates y bombones","P002"));
-productos.push (new Producto ("Torta individual",340,"50gr",42,"tortas y postres","P003"));
-productos.push (new Producto ("Tarta dulce individual",300,"300gr",5,"tortas y postres","P004"));
-productos.push (new Producto ("Postres",215,"500gr",3,"tortas y postres","P005"));
-productos.push (new Producto ("Bombones chico",200,"250gr",20,"chocolates","P006c"));
-productos.push (new Producto ("Bombones grande",400,"500gr",20,"chocolates","P006g"));
-productos.push (new Producto ("Chocolate relleno",500,"500gr",4,"chocolates","P007"));
-productos.push (new Producto ("Trufas chico",150,"250gr",7,"chocolates","P008c"));
-productos.push (new Producto ("Trufas grande",290,"500gr",5,"chocolates","P008g"));
-productos.push (new Producto ("Alfajores",90,"120gr",24,"merienda","P009"));
-productos.push (new Producto ("Masitas dulces chico",220,"250gr",10,"merienda","P010c"));
-productos.push (new Producto ("Masitas dulces grande",340,"500gr",10,"merienda","P010g"));
-productos.push (new Producto ("Torta de cumpleaños",800,"900gr",5,"tortas y postres","P011"));
+productos.push (new Producto ("Cookie",90,"25gr",10,"cookies y cupcakes",img ="multimedia/tienda/cookies.png"));
+productos.push (new Producto ("Cupcake",120,"250gr",100,"chocolates y bombones",""));
+productos.push (new Producto ("Torta individual",340,"50gr",42,"tortas y postres",""));
+productos.push (new Producto ("Tarta dulce individual",300,"300gr",5,"tortas y postres",""));
+productos.push (new Producto ("Postres",215,"500gr",3,"tortas y postres",""));
+productos.push (new Producto ("Bombones chico",200,"250gr",20,"chocolates",""));
+productos.push (new Producto ("Bombones grande",400,"500gr",20,"chocolates",""));
+productos.push (new Producto ("Chocolate relleno",500,"500gr",4,"chocolates",""));
+productos.push (new Producto ("Trufas chico",150,"250gr",7,"chocolates",""));
+productos.push (new Producto ("Trufas grande",290,"500gr",5,"chocolates",""));
+productos.push (new Producto ("Alfajores",90,"120gr",24,"merienda",""));
+productos.push (new Producto ("Masitas dulces chico",220,"250gr",10,"merienda",""));
+productos.push (new Producto ("Masitas dulces grande",340,"500gr",10,"merienda",""));
+productos.push (new Producto ("Torta de cumpleaños",800,"900gr",5,"tortas y postres",""));
+
 
 
 //Agregar un producto al carrito
@@ -63,3 +64,16 @@ function pagoCuotas (a,b) {
     return (a/b)
 }
 console.log ("El monto a pagar en cada cuota es de " + pagoCuotas(totalCarrito,6));
+
+
+
+//Desafío Nª8: DOM - Agregando elementos html a través del DOM
+for (const producto of productos) {
+    let contenedor = document.createElement ("div");
+    contenedor.innerHTML = `<h4> ${producto.nombre} </h4>
+                            <img> ${producto.imagen}</img>
+                            <p> Precio: ${producto.precio} </p>
+                            <p> Peso: ${producto.peso}</p>
+                            <button> Agregar producto al carrito </button>`;
+    document.body.appendChild (contenedor);
+}
