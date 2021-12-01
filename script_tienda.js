@@ -1,8 +1,13 @@
 //Mensaje de bienvenida
-// let nombreIngresado = prompt ("Ingresar su nombre");
-// alert ("Bienvenid@ " + nombreIngresado);
-// let apellidoIngresado = prompt ("Ingrese su apellido");
-// alert ("Bienvenid@" + nombreIngresado + apellidoIngresado);
+let nombre = ""
+if (localStorage.getItem ("nombre") == null) {  
+    nombre = prompt ("Ingresar su nombre");
+    localStorage.setItem ("usuario", nombre)
+}
+
+nombre = localStorage.getItem ("usuario")
+alert ("Bienvenid@ " + nombre)
+
 
 //Productos de la tienda y sus propiedades
 class Producto {
@@ -28,6 +33,7 @@ productos.push (new Producto ("Trufas",350,"500gr",2,"tortas y postres","8"));
 productos.push (new Producto ("Alfajores",350,"500gr",2,"tortas y postres","9"));
 productos.push (new Producto ("Masitas dulces",350,"500gr",2,"tortas y postres","10"));
 productos.push (new Producto ("Torta de cumpleaños",350,"500gr",2,"tortas y postres","11"));
+
 
 //Agregar productos al carrito
 
@@ -65,19 +71,15 @@ boton10.onclick = () => agregarCarrito(10);
 let boton11 = document.getElementById("producto11");
 boton11.onclick = () => agregarCarrito(11);
 
-
 function agregarCarrito (productoID) {
     let producto = productos.find (p => p.id == productoID)
     carrito.push (producto);
     console.log ("El producto " + producto.nombre + " fue agregado al carrito correctamente")
-    verCarrito ();
+    let precio =+ productos.find (p => p.precio == producto.precio)
+    console.log ("total" + parseInt(precio));
 }
 
 
 // Ver el total del carrito
-function verCarrito () {
-    let precioTotal= 0
-    for (const producto of carrito) {
-        precioTotal += producto.precio;
-    }
-}
+
+    
