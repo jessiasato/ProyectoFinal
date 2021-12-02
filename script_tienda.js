@@ -15,13 +15,20 @@ let total = 0;
 
 function agregarCarrito(producto,precio) {
     console.log(producto,precio);
-    productos.push(producto);
-    total = total + precio;
+    productos.push(producto,precio);
+    let lista = document.createElement ("li");
+    lista.innerHTML = `<li>Producto: ${producto} - Precio: ${precio}</li>`;
+    document.querySelector('.pagar_titulo').appendChild (lista);
 };
 
-//Sumar los productos del carrito
-function totalCarrito(){
-    console.log (producto,precio);
-    alert ("El total de su carrito es de " + totalCarrito)
+//Mensaje con el total de productos agregados al carrito
+
+function totalCarrito(total,productos){
+    console.log(total,productos)
+    alert ("Tu carrito contiene los siguientes productos: " + totalCarrito);
 };
+
+
+//Boton + función para borrar todos los productos del carrito
+//Función para editar un producto del carrito
     
