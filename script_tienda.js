@@ -19,13 +19,13 @@ function agregarCarrito(producto,precio) {
     let lista = document.createElement ("li");
     lista.innerHTML = `<li>Producto: ${producto} - Precio: ${precio}</li>`;
     document.querySelector('.pagar_titulo').appendChild (lista);
+//Guardar carrito en el storage
+    localStorage.setItem(producto,precio);
 };
 
 //Mensaje con el total de productos agregados al carrito
-
-function totalCarrito(total,productos){
-    console.log(total,productos)
-    alert ("Tu carrito contiene los siguientes productos: " + totalCarrito);
+function totalCarrito (){
+    alert("Tu carrito contiene los siguientes productos: ");
 };
 
 
