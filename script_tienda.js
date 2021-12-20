@@ -3,6 +3,7 @@ $( document ).ready(function() {console.log ("DOM is ready")});
 let carrito = [];
 let productos = [];
 let total = 0;
+
 //AJAX
 $.getJSON('stock.json', function(data) {
     console.log (data)
@@ -20,9 +21,8 @@ for (const producto of productos) {
                         <p> Precio: ${producto.precio}</p>
                         <button class="btn btn-dark btn-social" id="boton${producto.nombre}${producto.precio}">Agregar producto</button>
                         </div>`)
-                        $(`#boton${producto.nombre}${producto.precio}`).on('click', () => {alert (` El producto ${producto.nombre} fue agregado al carrito`)
+                        $(`#boton${producto.nombre}${producto.precio}`).on('click', () => {alert (` El producto ${producto.nombre} fue agregado al carrito`);
                         guardarCarrito(producto);});   
-
 }
 };
 
@@ -33,7 +33,15 @@ localStorage.setItem("tienda", JSON.stringify(productos));
 function guardarCarrito (producto) {
     carrito.push(producto);
     total = total + producto.precio;
-    alert ("Total a pagar $" + total)
+    console.log ("Total a pagar $" + total);
     localStorage.setItem("Carrito", JSON.stringify(carrito))
-    }
+}
 
+//Finalizar compra y ver total
+let botonFinal = document.createElement("div");
+botonFinal.innerHTML = `<button>Finalizar compra</button>`;
+document.body.appendChild(botonFinal);
+botonFinal.addEventListener("click", (sumaTotal))
+function sumaTotal () {
+    alert ("El total a pagar es $" + total)
+}
