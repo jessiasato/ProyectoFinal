@@ -38,10 +38,8 @@ function guardarCarrito (producto) {
 }
 
 //Finalizar compra y ver total
-let botonFinal = document.createElement("div");
-botonFinal.innerHTML = `<button>Finalizar compra</button>`;
-document.body.appendChild(botonFinal);
-botonFinal.addEventListener("click", (sumaTotal))
+verCarrito.addEventListener("click", (sumaTotal))
 function sumaTotal () {
-    alert ("El total a pagar es $" + total)
-}
+    alert ("El total a pagar es de: $ " + total)
+};
+
